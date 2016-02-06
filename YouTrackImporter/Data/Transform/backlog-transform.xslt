@@ -42,11 +42,12 @@
               <xsl:value-of select="priority"/>
             </value>
           </field>
+          <!-- *** Skipped
           <field name="sprint">
             <value>
               <xsl:value-of select="sprint"/>
             </value>
-          </field>
+          </field>-->
           <field name="assembly file version">
             <value>
               <xsl:value-of select="release"/>

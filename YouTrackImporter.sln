@@ -7,14 +7,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTrackImporter", "YouTrac
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
+		Import (debug)|Any CPU = Import (debug)|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Transform (debug)|Any CPU = Transform (debug)|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3A2EB0C8-577C-4F0C-A2CD-97AC1F625AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A2EB0C8-577C-4F0C-A2CD-97AC1F625AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A2EB0C8-577C-4F0C-A2CD-97AC1F625AA7}.Import (debug)|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A2EB0C8-577C-4F0C-A2CD-97AC1F625AA7}.Import (debug)|Any CPU.Build.0 = Debug|Any CPU
 		{3A2EB0C8-577C-4F0C-A2CD-97AC1F625AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A2EB0C8-577C-4F0C-A2CD-97AC1F625AA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A2EB0C8-577C-4F0C-A2CD-97AC1F625AA7}.Transform (debug)|Any CPU.ActiveCfg = Debug - Transform|Any CPU
+		{3A2EB0C8-577C-4F0C-A2CD-97AC1F625AA7}.Transform (debug)|Any CPU.Build.0 = Debug - Transform|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

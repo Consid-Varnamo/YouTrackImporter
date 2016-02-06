@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<backlog xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Schema/backlog.xsd">
+<backlog>
 	<issue>
-		<id>160</id>
+		<id>1</id>
 		<area>Generell</area>
 		<priority>5 - Låg</priority>
 		<sprint/>
@@ -16,7 +16,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>170</id>
+		<id>2</id>
 		<area>Generell</area>
 		<priority>3 - Hög</priority>
 		<sprint/>
@@ -31,7 +31,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>189</id>
+		<id>3</id>
 		<area>Generell</area>
 		<priority>5 - Låg</priority>
 		<sprint/>
@@ -47,7 +47,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>204</id>
+		<id>4</id>
 		<area>Artikelexport</area>
 		<priority>3 - Hög</priority>
 		<sprint/>
@@ -62,7 +62,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>210</id>
+		<id>5</id>
 		<area>Sök</area>
 		<priority>5 - Låg</priority>
 		<sprint/>
@@ -77,7 +77,7 @@
 		<external-comment>Dölj denna funktion tills vidare</external-comment>
 	</issue>
 	<issue>
-		<id>212</id>
+		<id>6</id>
 		<area>Träfflista</area>
 		<priority>5 - Låg</priority>
 		<sprint/>
@@ -92,7 +92,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>222</id>
+		<id>7</id>
 		<area>CM</area>
 		<priority>4 - Medium</priority>
 		<sprint/>
@@ -107,7 +107,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>224</id>
+		<id>8</id>
 		<area>Boksida</area>
 		<priority>5 - Låg</priority>
 		<sprint/>
@@ -122,7 +122,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>228</id>
+		<id>9</id>
 		<area>Orderhistorik</area>
 		<priority>5 - Låg</priority>
 		<sprint/>
@@ -137,7 +137,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>229</id>
+		<id>10</id>
 		<area>Kundvagn</area>
 		<priority>2 - Mycket hög</priority>
 		<sprint/>
@@ -152,7 +152,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>230</id>
+		<id>11</id>
 		<area>Kontaktformuläret</area>
 		<priority/>
 		<sprint/>
@@ -167,7 +167,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>231</id>
+		<id>12</id>
 		<area>Redigera artikel</area>
 		<priority>5 - Låg</priority>
 		<sprint/>
@@ -182,7 +182,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>232</id>
+		<id>13</id>
 		<area>Boksida</area>
 		<priority>5 - Låg</priority>
 		<sprint/>
@@ -197,7 +197,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>233</id>
+		<id>14</id>
 		<area>Träfflista</area>
 		<priority>5 - Låg</priority>
 		<sprint/>
@@ -212,7 +212,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>234</id>
+		<id>15</id>
 		<area>Träfflista</area>
 		<priority/>
 		<sprint/>
@@ -227,7 +227,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>235</id>
+		<id>16</id>
 		<area>Träfflista</area>
 		<priority/>
 		<sprint/>
@@ -242,7 +242,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>236</id>
+		<id>17</id>
 		<area>Boksida</area>
 		<priority/>
 		<sprint/>
@@ -257,7 +257,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>237</id>
+		<id>18</id>
 		<area>Kundvagn</area>
 		<priority/>
 		<sprint/>
@@ -272,7 +272,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>238</id>
+		<id>19</id>
 		<area>Boksida</area>
 		<priority/>
 		<sprint/>
@@ -287,7 +287,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>239</id>
+		<id>20</id>
 		<area>Boksida</area>
 		<priority/>
 		<sprint/>
@@ -302,7 +302,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>240</id>
+		<id>21</id>
 		<area>Boksida</area>
 		<priority/>
 		<sprint/>
@@ -317,7 +317,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>241</id>
+		<id>22</id>
 		<area>Kundvagn</area>
 		<priority/>
 		<sprint/>
@@ -332,7 +332,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>242</id>
+		<id>23</id>
 		<area>CM</area>
 		<priority/>
 		<sprint/>
@@ -347,7 +347,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>243</id>
+		<id>24</id>
 		<area>Kundvagn</area>
 		<priority/>
 		<sprint/>
@@ -362,7 +362,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>244</id>
+		<id>25</id>
 		<area>Boksida</area>
 		<priority/>
 		<sprint/>
@@ -377,7 +377,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>245</id>
+		<id>26</id>
 		<area>Träfflista</area>
 		<priority/>
 		<sprint/>
@@ -392,7 +392,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>246</id>
+		<id>27</id>
 		<area>Sök</area>
 		<priority/>
 		<sprint/>
@@ -407,7 +407,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>247</id>
+		<id>28</id>
 		<area>Import</area>
 		<priority/>
 		<sprint/>
@@ -422,7 +422,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>248</id>
+		<id>29</id>
 		<area>Träfflista</area>
 		<priority/>
 		<sprint/>
@@ -437,7 +437,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>249</id>
+		<id>30</id>
 		<area>Generell</area>
 		<priority/>
 		<sprint/>
@@ -452,7 +452,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>250</id>
+		<id>31</id>
 		<area>Generell</area>
 		<priority/>
 		<sprint/>
@@ -467,7 +467,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>252</id>
+		<id>32</id>
 		<area>Artikelexport</area>
 		<priority/>
 		<sprint/>
@@ -482,7 +482,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>253</id>
+		<id>33</id>
 		<area>Redigera artikel</area>
 		<priority/>
 		<sprint/>
@@ -497,7 +497,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>255</id>
+		<id>34</id>
 		<area>Redigera artikel</area>
 		<priority/>
 		<sprint/>
@@ -512,7 +512,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>256</id>
+		<id>35</id>
 		<area>Utökad sök</area>
 		<priority/>
 		<sprint/>
@@ -527,7 +527,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>257</id>
+		<id>36</id>
 		<area>Boksida</area>
 		<priority/>
 		<sprint/>
@@ -542,7 +542,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>258</id>
+		<id>37</id>
 		<area>Sök</area>
 		<priority/>
 		<sprint/>
@@ -557,7 +557,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>259</id>
+		<id>38</id>
 		<area>Boksida</area>
 		<priority/>
 		<sprint/>
@@ -572,7 +572,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>261</id>
+		<id>39</id>
 		<area>Boksida</area>
 		<priority/>
 		<sprint/>
@@ -587,7 +587,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>262</id>
+		<id>40</id>
 		<area>Validoo</area>
 		<priority/>
 		<sprint/>
@@ -602,7 +602,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>263</id>
+		<id>41</id>
 		<area>Redigera artikel</area>
 		<priority/>
 		<sprint/>
@@ -617,7 +617,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>264</id>
+		<id>42</id>
 		<area>Redigera artikel</area>
 		<priority/>
 		<sprint/>
@@ -632,7 +632,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>265</id>
+		<id>43</id>
 		<area>Boksida</area>
 		<priority/>
 		<sprint/>
@@ -647,7 +647,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>266</id>
+		<id>44</id>
 		<area>Boksida</area>
 		<priority/>
 		<sprint/>
@@ -662,7 +662,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>267</id>
+		<id>45</id>
 		<area>Nyheter</area>
 		<priority/>
 		<sprint/>
@@ -677,7 +677,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>268</id>
+		<id>46</id>
 		<area>Massbeställning</area>
 		<priority/>
 		<sprint/>
@@ -692,7 +692,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>269</id>
+		<id>47</id>
 		<area>Utökad sök</area>
 		<priority/>
 		<sprint/>
@@ -707,7 +707,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>270</id>
+		<id>48</id>
 		<area>Orderhistorik</area>
 		<priority/>
 		<sprint/>
@@ -722,7 +722,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>271</id>
+		<id>49</id>
 		<area>Redigera artikel</area>
 		<priority/>
 		<sprint/>
@@ -737,7 +737,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>272</id>
+		<id>50</id>
 		<area>Redigera artikel</area>
 		<priority/>
 		<sprint/>
@@ -752,7 +752,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>273</id>
+		<id>51</id>
 		<area>Träfflista</area>
 		<priority/>
 		<sprint/>
@@ -767,7 +767,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>274</id>
+		<id>52</id>
 		<area>Boksida</area>
 		<priority/>
 		<sprint/>
@@ -782,7 +782,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>275</id>
+		<id>53</id>
 		<area>Generell</area>
 		<priority/>
 		<sprint/>
@@ -797,7 +797,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>276</id>
+		<id>54</id>
 		<area>Löpsedel</area>
 		<priority/>
 		<sprint/>
@@ -812,7 +812,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>277</id>
+		<id>55</id>
 		<area>Sök</area>
 		<priority/>
 		<sprint/>
@@ -827,7 +827,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>278</id>
+		<id>56</id>
 		<area>Redigera artikel</area>
 		<priority/>
 		<sprint/>
@@ -842,7 +842,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>279</id>
+		<id>57</id>
 		<area>Import</area>
 		<priority/>
 		<sprint/>
@@ -857,7 +857,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>280</id>
+		<id>58</id>
 		<area>Sök</area>
 		<priority/>
 		<sprint/>
@@ -872,7 +872,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>281</id>
+		<id>59</id>
 		<area>Generell</area>
 		<priority/>
 		<sprint/>
@@ -887,7 +887,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>282</id>
+		<id>60</id>
 		<area>CM</area>
 		<priority/>
 		<sprint/>
@@ -902,7 +902,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>284</id>
+		<id>61</id>
 		<area>Redigera artikel</area>
 		<priority>3 - Hög</priority>
 		<sprint/>
@@ -918,7 +918,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>27</id>
+		<id>62</id>
 		<area>Träfflista</area>
 		<priority/>
 		<sprint/>
@@ -933,7 +933,7 @@
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>75</id>
+		<id>63</id>
 		<area>Inställningar</area>
 		<priority/>
 		<sprint>1</sprint>
@@ -950,7 +950,7 @@ MÅL: 151012</internal-comment>
 		<external-comment>Datumformat ska visas utan tid på - ok</external-comment>
 	</issue>
 	<issue>
-		<id>109</id>
+		<id>64</id>
 		<area>Redigera titel</area>
 		<priority/>
 		<sprint>1</sprint>
@@ -965,7 +965,7 @@ MÅL: 151012</internal-comment>
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>111</id>
+		<id>65</id>
 		<area>Ramverk</area>
 		<priority/>
 		<sprint>2</sprint>
@@ -981,7 +981,7 @@ MÅL: 151012</internal-comment>
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>197</id>
+		<id>66</id>
 		<area>Artikelimport</area>
 		<priority/>
 		<sprint/>
@@ -996,7 +996,7 @@ MÅL: 151012</internal-comment>
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>201</id>
+		<id>67</id>
 		<area>Redigera titel</area>
 		<priority/>
 		<sprint/>
@@ -1011,7 +1011,7 @@ MÅL: 151012</internal-comment>
 		<external-comment>Bilder laddas ned vid artikelimport, men på Text- och bildfliken visas inte nedladdad bild.</external-comment>
 	</issue>
 	<issue>
-		<id>206</id>
+		<id>68</id>
 		<area>Träfflista</area>
 		<priority/>
 		<sprint/>
@@ -1026,7 +1026,7 @@ MÅL: 151012</internal-comment>
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>207</id>
+		<id>69</id>
 		<area>Träfflista - filter</area>
 		<priority/>
 		<sprint/>
@@ -1041,7 +1041,7 @@ MÅL: 151012</internal-comment>
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>227</id>
+		<id>70</id>
 		<area>Generell</area>
 		<priority/>
 		<sprint/>
@@ -1056,7 +1056,7 @@ MÅL: 151012</internal-comment>
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>254</id>
+		<id>71</id>
 		<area>Redigera artikel</area>
 		<priority/>
 		<sprint/>
@@ -1071,7 +1071,7 @@ MÅL: 151012</internal-comment>
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>262</id>
+		<id>72</id>
 		<area>Löpsedel</area>
 		<priority/>
 		<sprint/>
@@ -1086,7 +1086,7 @@ MÅL: 151012</internal-comment>
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>286</id>
+		<id>73</id>
 		<area>Redigera artikel</area>
 		<priority/>
 		<sprint/>
@@ -1101,7 +1101,7 @@ MÅL: 151012</internal-comment>
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>287</id>
+		<id>74</id>
 		<area>Generell</area>
 		<priority/>
 		<sprint/>
@@ -1116,7 +1116,7 @@ MÅL: 151012</internal-comment>
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>288</id>
+		<id>75</id>
 		<area>Kundvagn</area>
 		<priority/>
 		<sprint/>
@@ -1131,7 +1131,7 @@ MÅL: 151012</internal-comment>
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>289</id>
+		<id>76</id>
 		<area>Boksida</area>
 		<priority/>
 		<sprint/>
@@ -1146,7 +1146,7 @@ MÅL: 151012</internal-comment>
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>290</id>
+		<id>77</id>
 		<area>Boksida</area>
 		<priority/>
 		<sprint/>
@@ -1161,7 +1161,7 @@ MÅL: 151012</internal-comment>
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>291</id>
+		<id>78</id>
 		<area>Löpsedel</area>
 		<priority/>
 		<sprint/>
@@ -1176,7 +1176,7 @@ MÅL: 151012</internal-comment>
 		<external-comment/>
 	</issue>
 	<issue>
-		<id>292</id>
+		<id>79</id>
 		<area>Order</area>
 		<priority/>
 		<sprint/>
