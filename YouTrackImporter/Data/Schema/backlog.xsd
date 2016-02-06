@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="backlog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="issue" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:int" />
+              <xs:element name="area" type="xs:string" />
+              <xs:element name="priority" type="xs:string" />
+              <xs:element name="sprint" type="xs:string" />
+              <xs:element name="status" type="xs:string" />
+              <xs:element name="release" type="xs:string" />
+              <xs:element name="estimation-hrs">
+                <xs:simpleType>
+                  <xs:union>
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:length value="0" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                    <xs:simpleType>
+                      <xs:restriction base="xs:int" />
+                    </xs:simpleType>
+                  </xs:union>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="worked-hrs">
+                <xs:simpleType>
+                  <xs:union>
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:length value="0" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                    <xs:simpleType>
+                      <xs:restriction base="xs:int" />
+                    </xs:simpleType>
+                  </xs:union>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="assigned" type="xs:string" />
+              <xs:element name="roles" type="xs:string" />
+              <xs:element name="description" type="xs:string" />
+              <xs:element name="internal-comment" type="xs:string" />
+              <xs:element name="external-comment" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

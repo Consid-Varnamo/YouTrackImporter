@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<backlog xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Schema/backlog.xsd">
+	<issue>
+		<id>160</id>
+		<area>Generell</area>
+		<priority>5 - Låg</priority>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>2</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles>Personal</roles>
+		<description>Lägg till möjlighet att använda rubriker i editorn och allt det där andra. Avser verktygsfälten i EPiServer CMS-editorn</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>170</id>
+		<area>Generell</area>
+		<priority>3 - Hög</priority>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>5</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles>Alla</roles>
+		<description>Finska stödtabeller behöver översättas. Troligen även en del "statiska" texter</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>189</id>
+		<area>Generell</area>
+		<priority>5 - Låg</priority>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Verifiera att flagga för förhandsinfo är implementerad</description>
+		<internal-comment>Stäm av regelverk med Johanna. Maria ber henna mejla instruktion.
+160201 Mejl från Johanna. Säkerställ att flaggan används i artikel import och export och att markering på boksidan visas om förhandsinfo är markerad</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>204</id>
+		<area>Artikelexport</area>
+		<priority>3 - Hög</priority>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Förlagets nyckelord (Karaktar) kommer inte med i artikelexporterna. Inte heller: omslag_beskrivning, illustreradesidor, omslagstitel eller recensionsutdrag. Johanna ska testa och verifiera när testmiljön är igång.</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>210</id>
+		<area>Sök</area>
+		<priority>5 - Låg</priority>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>5</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles>Förlag</roles>
+		<description>Artikelstatus-varningarna (stjärnorna) ska inte visas under fliken Sök, bara under Artiklar</description>
+		<internal-comment/>
+		<external-comment>Dölj denna funktion tills vidare</external-comment>
+	</issue>
+	<issue>
+		<id>212</id>
+		<area>Träfflista</area>
+		<priority>5 - Låg</priority>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>2</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Filtrering: Varugrupp astronomi visas "030astronomi" i listan och när man klickar får man ingen träff. </description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>222</id>
+		<area>CM</area>
+		<priority>4 - Medium</priority>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles>Personal</roles>
+		<description>Sätt upp rapporter för order, adresser och artiklar (fakturaunderlag)</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>224</id>
+		<area>Boksida</area>
+		<priority>5 - Låg</priority>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>Dölj alla datumfält (första försäljningsdag, recensionsdag, fakturadatum) som innehåller: 1900-01-01. Gäller även exportfiler (artikel)</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>228</id>
+		<area>Orderhistorik</area>
+		<priority>5 - Låg</priority>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>2</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles>Bokhandel</roles>
+		<description>Visa distributörens telefonnummer och e-postadress i beställningarna. Gäller vyn för Bokhandel</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>229</id>
+		<area>Kundvagn</area>
+		<priority>2 - Mycket hög</priority>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>När man rensar antalet i kundvagnen tas raden bort automatiskt. Kundvagnen ska endast ta bort 0-rader när man uppdaterar/skickar</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>230</id>
+		<area>Kontaktformuläret</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles>Alla</roles>
+		<description>Kontakta-oss formuläret trasigt, säger "Något gick fel" </description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>231</id>
+		<area>Redigera artikel</area>
+		<priority>5 - Låg</priority>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles>Förlag</roles>
+		<description>Det går att spara negativa tal i mått och vikt</description>
+		<internal-comment>Implementera felhantering om något av värdena i fälten bredd, höjd, ryggbred och vikt är negativt. Visa felmeddelande i gränssnitt "Fältet xxx får inte innehålla ett negativt värde"</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>232</id>
+		<area>Boksida</area>
+		<priority>5 - Låg</priority>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>2</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles>Bokhandel</roles>
+		<description>Om lagersaldot är mindre än 100 ska exakt antal visas. Annars visas &gt; 100. Om lagersaldo är noll ska fältet inte visas (idag visas 0)</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>233</id>
+		<area>Träfflista</area>
+		<priority>5 - Låg</priority>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>2</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>Det är enbart personal som ska se granskade poster markerade med grönt i träfflistan</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>234</id>
+		<area>Träfflista</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>5</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Får inga träffar om man klickar vidare på serienamn och titel som innehåller &amp; (ex: 9789186667429)</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>235</id>
+		<area>Träfflista</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>5</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Om man klickar på ett författarnamn i träfflistan för att söka vidare fastnar namnet i fältet för medarbetare i utökad sök även om hela utökad-sö inte visas, Om man då söker på nåt nytt (i den nedre sökrutan) får man inga träffar pga ovan.</description>
+		<internal-comment>160202 Rensa formuläret utökad sök när det stängs. När man gör länksökningar från t ex träfflista eller boksida (medarbetare, thema osv.) ska inte värdena från sök sparas i formuläret eftersom det som standard är dolt.</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>236</id>
+		<area>Boksida</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>1</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>Titeln ska vara klickbar (som i träfflistan) </description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>237</id>
+		<area>Kundvagn</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>F-pris ska visas i kundvagnen och den ska räkna ner så summan av beställningen visas</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>238</id>
+		<area>Boksida</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>5</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles>Alla</roles>
+		<description>Thema-beskrivning verkar saknas i katalogen och därför visas inte thema på artiklarna (ex. 9789146225904, 9789198066609)</description>
+		<internal-comment>Detta är en engångskörning.</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>239</id>
+		<area>Boksida</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>1</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>Hänvisningsartikelnumret ska vara länkat </description>
+		<internal-comment>Länka till boksidan</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>240</id>
+		<area>Boksida</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>På små skärmar hamnar saga-knappen utanför</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>241</id>
+		<area>Kundvagn</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>Ta bort scroll när det gäller antal i kundvagnen, ska skriva in direkt (ta bort scrollet även på boksida, träfflista och snabbeställnint)</description>
+		<internal-comment>I talfälten finns idag en öka/minska-funktion. Ta bort den</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>242</id>
+		<area>CM</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>2</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Om man byter namn på en organisation ska rollerna automatiskt få samma namn. Avser Business Foundation-poster för Distributör, Förlag och Bokhandel</description>
+		<internal-comment>SQL-trigger</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>243</id>
+		<area>Kundvagn</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>5</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>(NY) Smart sätt att skriva ut kundvagnen</description>
+		<internal-comment>160202 Stajla om sidan för utskrift. Ta hänsyn till stora kundvagnar (&gt; 100 rader)</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>244</id>
+		<area>Boksida</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>Önskar: printfunktion för boksida. Om man skriver ut en boksida visas alla länkar till themakoder osv http://www.bokinfo.se/sverige/sok/#/Search/null/null/null/null/null/null/null/null/null/null/null/null/null/null/null/null/null/YFH/null</description>
+		<internal-comment>Skriv inte ut länkarna</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>245</id>
+		<area>Träfflista</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>5</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Sortering på serie ger en tom träfflista. Sortering på titel eller förlag: titlarna kommer inte i bokstavsordning </description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>246</id>
+		<area>Sök</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>5</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Se över type-ahead-funktionen som ger 5 träffar. Prestandaproblem med nuvarande</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>247</id>
+		<area>Import</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>1</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>(NY) Om arbetstitel är tom vid import men titel finns så ska värdet för titel även sättas på arbetstitel</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>248</id>
+		<area>Träfflista</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>5</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>Lägg till: Visa alla-funktion på träfflistan. Begränsa till max 1000 rader till att börja med. Om träfflistan är större, så dölj funktionen</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>249</id>
+		<area>Generell</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>1</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>Dölj status-menyn temporärt (stjärnorna) för förlagen</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>250</id>
+		<area>Generell</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>13</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Lösa problemen med status-menyn (stjärnorna) för förlagen</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>252</id>
+		<area>Artikelexport</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>2</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Om lagersaldot är mindre än 100 ska exakt antal exportas. Annars sätt 999. Om lagersaldo är noll ska fältet vara tomt</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>253</id>
+		<area>Redigera artikel</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>1</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>Dölj fältet 'Senast uppdaterad'. Sätts ju alltid till current time</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>255</id>
+		<area>Redigera artikel</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>1</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>Lägg till 'gram' efter vikten</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>256</id>
+		<area>Utökad sök</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>2</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>Sök även läromedel' innebär just nu att bara läromedel kommer fram</description>
+		<internal-comment>När rutan inte är ikryssad, ska sökkriteriet -laromedel:ja läggas till. Kryssas rutan i ska kriteriet tas bort</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>257</id>
+		<area>Boksida</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>1</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>Medarbetarnamnen på boksidan ska visas enligt: efternamn, förnamn</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>258</id>
+		<area>Sök</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>Markören stannar ej kvar i sökrutan efter en skanning, vilket den gjorde i förra Bokrondellen. Detta innebär att om man har många böcker att skanna på rad så måste man gå in manuellt och placera markören i sökrutan mellan varje bok. Gäller också sökning och när man lagt nåt i kundvagnen. Ska fungera både på boksida och träfflista. Fokus ska alltid hamna i sökrutan när man sökt/scannat eller lagt i kundvagnen.</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>259</id>
+		<area>Boksida</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>Om inte titel finns ska arbetstitel visas på boksidan, träfflistan, kundvagnen etc.</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>261</id>
+		<area>Boksida</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>2</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>HTML-taggar i recensionsutdrag skrivs ut (tolkas som text)</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>262</id>
+		<area>Validoo</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Begränsa Höjd, Bredd, Ryggbredd till 1000 mm och vikt till 10000 gram</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>263</id>
+		<area>Redigera artikel</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles>Förlag</roles>
+		<description>Vid registrering av artikel kan förlaget skriva in ord (fritext) i Thema. När de sparar ligger texten kvar i katalogen.</description>
+		<internal-comment>Validera att samtliga koder är ok innnan artikeln sparas</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>264</id>
+		<area>Redigera artikel</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>När någon lägger upp en titel som redan är upplagd ska felmeddelandet säga det i klartext. Nu säger den ett glatt "Artikeln kunde inte sparas" (kundrapport, inte verifierat felet)</description>
+		<internal-comment>Justera felhantering så mer specifika felmeddelanden returneras</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>265</id>
+		<area>Boksida</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>1</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Reapriset ska visas med två decimaler (ex. 9789129688726)</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>266</id>
+		<area>Boksida</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>1</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>Distrributörsnamn ska visas på boksida och i träfflista vid onmouseover på kortnamnet</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>267</id>
+		<area>Nyheter</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>1</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>När bokinfo lägger in nyheter på "Bi informerar" ska den nyaste komma först och ordningen ska gå att bestämma</description>
+		<internal-comment>Nyheter hämtas från block (Global\Nyheter)</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>268</id>
+		<area>Massbeställning</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>2</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>Om man lägger till en titel som inte är beställningsbar från en distributör går det inte att byta distributör innan man lägger till i kundvagnen, man måste radera raden</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>269</id>
+		<area>Utökad sök</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>Förlagssökning funkar inte i utökad sök. Se till att BR-ID syns efter förlagsnamnet när man söker i Förlagsfältet i utökad sök</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>270</id>
+		<area>Orderhistorik</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>1</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>Om man klickar på sök och orderinkorgen är tom står det "inga ordrar" - ska vara "inga order"</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>271</id>
+		<area>Redigera artikel</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>2</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>När man sparat en artikel vill man hamna högst uppe på sidan</description>
+		<internal-comment>Skrolla upp sidan när artikeln sparats</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>272</id>
+		<area>Redigera artikel</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>2</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Sätt en gräns så EAN-fältet inte får vara mera än 13 tecken</description>
+		<internal-comment>Kontrollera enligt samma logik som artikelnumret (modulus 10)</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>273</id>
+		<area>Träfflista</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>2</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>När man bläddrar i träfflistan på pilarna längst vill man vill hamna högst upp på nästa sida</description>
+		<internal-comment>Skrolla upp sidan vid navigering</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>274</id>
+		<area>Boksida</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>21</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>(NY) Möjlighet att bläddra mellan poster i en träfflista från boksidan</description>
+		<internal-comment>Bläddringsknappar implementeras på boksidan och sökresultatet i form av ISBN lagras i användarsessionen. Tänk på prestanda om sökningen resulterar i många träffar</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>275</id>
+		<area>Generell</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>13</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Thema-mappningen måste göras klart, mappa även åldersgrupper</description>
+		<internal-comment>160201 Se spec från Maria till Heinbäck (e-post)</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>276</id>
+		<area>Löpsedel</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>5</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Rensa gamla löpsedlar automatiskt (finns i gamla)</description>
+		<internal-comment>Skapa schemajobb som raderar löpsedlar äldre än två månader efter aktivitetsdatumet (inte när den skapades)</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>277</id>
+		<area>Sök</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>21</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description> </description>
+		<internal-comment>Filtrera bort mediatypen "Nedladdningsbar bok". Det finns flera sätt att lösa detta. Kryssruta i utökad sök eller tillägg till inställningssidan - "förvalda filter". Bestäms närmre före utveckling</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>278</id>
+		<area>Redigera artikel</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>1</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Daniel Heinmert</assigned>
+		<roles/>
+		<description>I sidhuvudet ska Organisationens namn visas som förlag (inte namnet från fritextfältet)</description>
+		<internal-comment>Hämta organisation från cls_Organization där fältet CustomId = book.forlag_id</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>279</id>
+		<area>Import</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>2</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Tillåt F-pris 0 i importen (ev. bara för vissa mediatyper)</description>
+		<internal-comment>Gäller för mediatyperna Marknadsföringsmaterial och Övrigt</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>280</id>
+		<area>Sök</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>21</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Slå på stavningshjälpen och utveckla den</description>
+		<internal-comment>Stängdes av pga. prestandaproblem</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>281</id>
+		<area>Generell</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Bokinfo ImportUtility för nedladdning av bilder</description>
+		<internal-comment>Idag laddas ~500 bilder ner varje körning. Bygg om så man kan köra snurran per förlag</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>282</id>
+		<area>CM</area>
+		<priority/>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>1</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Upplägg av nya kunder. Går ej att koppla till någon distribubutör!</description>
+		<internal-comment>Ärende måste skickas till EPiServer</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>284</id>
+		<area>Redigera artikel</area>
+		<priority>3 - Hög</priority>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>3</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles/>
+		<description>Ett förlag ska bara kunna byta huvuddistributör på en titel i webbgränssnittet om förlaget
+är kopplat till distributören i CM. </description>
+		<internal-comment>Se titel 9789163887949. FSGR-posten på boken har kommit in via grossistfil och ska inte kunna sättas som huvuddistributör för boken</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>27</id>
+		<area>Träfflista</area>
+		<priority/>
+		<sprint/>
+		<status>Avvakta</status>
+		<release/>
+		<estimation-hrs/>
+		<worked-hrs/>
+		<assigned/>
+		<roles>Alla</roles>
+		<description>Gör om adress till sök med query-parametrar istället för segment</description>
+		<internal-comment>Idag får man en resultaturl i stil med http://sv.bokrondellen.test.dropit.se/sverige/sok/#/Search/astrid/rom/null/null/null/null/null/null/null/null/null/null/null/null/null/null/null</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>75</id>
+		<area>Inställningar</area>
+		<priority/>
+		<sprint>1</sprint>
+		<status>Avvakta</status>
+		<release>7.0.1.892</release>
+		<estimation-hrs/>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles>Bokhandel</roles>
+		<description>Funktion för att ändra inställningar för automatisk kundvagn saknas. </description>
+		<internal-comment>Se nuvarande version av Bokrondellen
+150922 Validera funktion /chrhei
+MÅL: 151012</internal-comment>
+		<external-comment>Datumformat ska visas utan tid på - ok</external-comment>
+	</issue>
+	<issue>
+		<id>109</id>
+		<area>Redigera titel</area>
+		<priority/>
+		<sprint>1</sprint>
+		<status>Avvakta</status>
+		<release>7.0.1.892</release>
+		<estimation-hrs/>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles>Förlag</roles>
+		<description>Distributörsinformationen visar alla marknader. Den ska bara visas för aktuell marknad</description>
+		<internal-comment>150424 Går ej att testa då det inte går att visa titlar på finska</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>111</id>
+		<area>Ramverk</area>
+		<priority/>
+		<sprint>2</sprint>
+		<status>Avvakta</status>
+		<release>7.0.2.955</release>
+		<estimation-hrs/>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles>Alla</roles>
+		<description>Justera funktioner för momssats så att en artikel kan ha en momssats per marknad</description>
+		<internal-comment>150424 Går ej testa på stage-miljön. 
+150504 Avvakta indexering /chk</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>197</id>
+		<area>Artikelimport</area>
+		<priority/>
+		<sprint/>
+		<status>Avvakta</status>
+		<release/>
+		<estimation-hrs/>
+		<worked-hrs/>
+		<assigned/>
+		<roles>Distributör</roles>
+		<description>Justera så att låsmekanismen för språk fungerar vid artikelimport</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>201</id>
+		<area>Redigera titel</area>
+		<priority/>
+		<sprint/>
+		<status>Avvakta</status>
+		<release>8.16.1.38</release>
+		<estimation-hrs/>
+		<worked-hrs/>
+		<assigned/>
+		<roles>Förlag</roles>
+		<description>Omslagsbilden ska visa nedladdad bild - inte orginalbilden hos leverantören</description>
+		<internal-comment/>
+		<external-comment>Bilder laddas ned vid artikelimport, men på Text- och bildfliken visas inte nedladdad bild.</external-comment>
+	</issue>
+	<issue>
+		<id>206</id>
+		<area>Träfflista</area>
+		<priority/>
+		<sprint/>
+		<status>Avvakta</status>
+		<release/>
+		<estimation-hrs/>
+		<worked-hrs/>
+		<assigned/>
+		<roles>Alla</roles>
+		<description>Klick på titel ska leda till boksidan om boken inte finns i flera utgåvor.</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>207</id>
+		<area>Träfflista - filter</area>
+		<priority/>
+		<sprint/>
+		<status>Avvakta</status>
+		<release/>
+		<estimation-hrs/>
+		<worked-hrs/>
+		<assigned/>
+		<roles>Alla</roles>
+		<description>Varugrupperna ska visas i sin nummerordning, inte efter antal träffar</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>227</id>
+		<area>Generell</area>
+		<priority/>
+		<sprint/>
+		<status>Avvakta</status>
+		<release/>
+		<estimation-hrs/>
+		<worked-hrs/>
+		<assigned/>
+		<roles/>
+		<description>Prestandaoptimering, type ahead snabbsök</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>254</id>
+		<area>Redigera artikel</area>
+		<priority/>
+		<sprint/>
+		<status>Avvakta</status>
+		<release/>
+		<estimation-hrs/>
+		<worked-hrs/>
+		<assigned>Maria Börman</assigned>
+		<roles/>
+		<description>När uppdateras 'Ändrad' i headern? Inte när metadata uppdateras i webbgränssnittet</description>
+		<internal-comment>160201 Maria specificerar hur detta ska fungera</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>262</id>
+		<area>Löpsedel</area>
+		<priority/>
+		<sprint/>
+		<status>Avvakta</status>
+		<release/>
+		<estimation-hrs/>
+		<worked-hrs/>
+		<assigned/>
+		<roles/>
+		<description>Justera hur löpsedlarna visas på de olika flikarna</description>
+		<internal-comment>160201 Bokinfo kompletterar informationen</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>286</id>
+		<area>Redigera artikel</area>
+		<priority/>
+		<sprint/>
+		<status>Avvakta</status>
+		<release/>
+		<estimation-hrs/>
+		<worked-hrs/>
+		<assigned/>
+		<roles/>
+		<description>Låser sig titelfältet för förlagen även om vi bara förbiccar o inte rör titelfältet?</description>
+		<internal-comment>160201 Maria återkommer med information</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>287</id>
+		<area>Generell</area>
+		<priority/>
+		<sprint/>
+		<status>Avvakta</status>
+		<release/>
+		<estimation-hrs/>
+		<worked-hrs/>
+		<assigned/>
+		<roles/>
+		<description>Varför kan lagerstatus skilja sig mellan CM, katalog och webb (exempel behövs)</description>
+		<internal-comment>Lagerstatus lagras på boksidan (flervalsfält) och i stödtabellen ItemArticle_Distributor</internal-comment>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>288</id>
+		<area>Kundvagn</area>
+		<priority/>
+		<sprint/>
+		<status>Avvakta</status>
+		<release/>
+		<estimation-hrs/>
+		<worked-hrs/>
+		<assigned/>
+		<roles/>
+		<description>(NY) Visa även bandtyp i kundvagnen</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>289</id>
+		<area>Boksida</area>
+		<priority/>
+		<sprint/>
+		<status>Avvakta</status>
+		<release/>
+		<estimation-hrs/>
+		<worked-hrs/>
+		<assigned/>
+		<roles/>
+		<description>(NY) Ny mall för finsk boksida</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>290</id>
+		<area>Boksida</area>
+		<priority/>
+		<sprint/>
+		<status>Avvakta</status>
+		<release/>
+		<estimation-hrs/>
+		<worked-hrs/>
+		<assigned/>
+		<roles/>
+		<description>(NY)Visa även när boken senast är beställd och hur många ex. vid sök i orderhistorik</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>291</id>
+		<area>Löpsedel</area>
+		<priority/>
+		<sprint/>
+		<status>Avvakta</status>
+		<release/>
+		<estimation-hrs/>
+		<worked-hrs/>
+		<assigned/>
+		<roles/>
+		<description>Det förlaget skriver in under "rubrik" ska inte visas med versaler. Begränsa längden på fältet.</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+	<issue>
+		<id>292</id>
+		<area>Order</area>
+		<priority/>
+		<sprint/>
+		<status>Avvakta</status>
+		<release/>
+		<estimation-hrs/>
+		<worked-hrs/>
+		<assigned/>
+		<roles/>
+		<description>"Din order kunde inte läsas in. Var vänlig kontakta personalen på Bokrondellen eller försök skicka in din order på nytt" Byt ut Bokrondellen, se till att en kopia går till order@bokinfo.se och ange BR-ID i mejlet på den som försökt lägga ordern-</description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+</backlog>

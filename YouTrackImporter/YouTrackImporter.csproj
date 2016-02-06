@@ -48,6 +48,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Data\Schema\backlog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\Schema\youtrack-issue.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\backlog.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Transform\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
