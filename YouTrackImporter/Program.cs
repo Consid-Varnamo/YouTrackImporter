@@ -71,7 +71,7 @@ namespace YouTrackImporter
                     // if login fails then exit
                     if (!loginResponse.IsSuccessStatusCode)
                     {
-                        Console.Write("YouTrack server returned an error: {0:d} {1}\r\n", loginResponse.StatusCode, loginResponse.ReasonPhrase);
+                        Console.Write("YouTrack server returned an error: {0:d} {1}\r\n\r\n", loginResponse.StatusCode, loginResponse.ReasonPhrase);
                         return loginResponse;
                     }
 
@@ -89,7 +89,7 @@ namespace YouTrackImporter
             if (requestResponse.IsSuccessStatusCode)
                 Console.Write("'{0}' was imported successfully\r\n\r\n", Path.GetFileName(inputUri));
             else
-                Console.Write("YouTrack server returned an error: {0:d} {1}\r\n", requestResponse.StatusCode, requestResponse.ReasonPhrase);
+                Console.Write("YouTrack server returned an error: {0:d} {1}\r\n\r\n", requestResponse.StatusCode, requestResponse.ReasonPhrase);
 
             return requestResponse;
         }
