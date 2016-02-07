@@ -16,6 +16,9 @@ namespace YouTrackImporter
     {
         static Dictionary<ArgumentEnum, string> args;
 
+        /// <summary>
+        /// Contains the valid console command switches
+        /// </summary>
         enum ArgumentEnum { Transform, Import, Stylesheet, InputUri, ResultFile, Project, YouTrackUri }
 
         /// <summary>
@@ -40,6 +43,13 @@ namespace YouTrackImporter
             }
         }
 
+        /// <summary>
+        /// Imports issues to YouTrack from Xml
+        /// </summary>
+        /// <param name="inputUri">Path to the xml file to import</param>
+        /// <param name="baseUri">Base url to the YouTrack server</param>
+        /// <param name="project">The name of the project issues will be imported to</param>
+        /// <returns>The last executed HttpResponseMessage</returns>
         static async Task<HttpResponseMessage> RunImportIssues(string inputUri, string baseUri, string project)
         {
             string requestUri = string.Format("rest/import/{0}/issues", project);
@@ -94,6 +104,12 @@ namespace YouTrackImporter
             return requestResponse;
         }
 
+        /// <summary>
+        /// Transform a custom xml file to a xml file that can be imported to YouTrack
+        /// </summary>
+        /// <param name="stylesheetUri">The path of the Xslt stylesheet to use</param>
+        /// <param name="inputUri">The path to the custom xml file</param>
+        /// <param name="resultFile">The full path of the transformed xml file</param>
         static void Transform(string stylesheetUri, string inputUri, string resultFile)
         {
             XslCompiledTransform xsl = new XslCompiledTransform();
@@ -104,6 +120,12 @@ namespace YouTrackImporter
             Console.Write("'{0}' was transformed to '{1}' successfully.\r\n\r\n", Path.GetFileName(inputUri), resultFile);
         }
 
+        /// <summary>
+        /// Parses the command line arguments and returns a <code>Dictionary&lt;ArgumentEnum, string&gt;</code> instance. Valid
+        /// arguments is controlled by the <see cref="ArgumentEnum"/> enum.
+        /// </summary>
+        /// <param name="args">The arguments that will be parsed</param>
+        /// <returns>A dictionary containing the parsed arguments and their values</returns>
         static Dictionary<ArgumentEnum, string> ParseAguments(string[] args)
         {
             var result = from s in args
