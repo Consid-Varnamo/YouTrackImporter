@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="CodeMaps\Main.dgml" />
     <None Include="Data\Schema\backlog.xsd">
       <SubType>Designer</SubType>
     </None>
