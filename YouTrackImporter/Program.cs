@@ -40,7 +40,7 @@ namespace YouTrackImporter
             }
             if (Program.args.Keys.Any(k => k == ArgumentEnum.Import))
             {
-                Task task = RunImportIssues(Program.args[ArgumentEnum.InputUri], Program.args[ArgumentEnum.YouTrackUri], Program.args[ArgumentEnum.Project], 
+                Task task = RunImportIssues(Program.args[ArgumentEnum.InputUri], Program.args[ArgumentEnum.YouTrackUri], Program.args[ArgumentEnum.Project],
                     Program.args[ArgumentEnum.Username], Program.args[ArgumentEnum.Password]);
 
                 task.Wait();
@@ -56,70 +56,78 @@ namespace YouTrackImporter
         /// <returns>The last executed HttpResponseMessage</returns>
         static async Task<HttpResponseMessage> RunImportIssues(string inputUri, string baseUri, string project, string username, string password)
         {
-            string requestUri = string.Format("rest/import/{0}/issues", project);
-            HttpResponseMessage requestResponse = null;
-
-            string content;
-
-            // read content of the file to import
-            using (StreamReader reader = new StreamReader(inputUri, Encoding.UTF8))
+            try
             {
-                content = reader.ReadToEnd();
-            }
+                string requestUri = string.Format("rest/import/{0}/issues", project);
+                HttpResponseMessage requestResponse = null;
 
-            using (HttpClientHandler handler = new HttpClientHandler() { CookieContainer = new CookieContainer() })
-            {
-                using (HttpClient client = new HttpClient(handler))
+                string content;
+
+                // read content of the file to import
+                using (StreamReader reader = new StreamReader(inputUri, Encoding.UTF8))
                 {
-                    // set base uri and request headers
-                    client.BaseAddress = new Uri(baseUri);
-                    client.DefaultRequestHeaders.Accept.Clear();
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/xml"));
+                    content = reader.ReadToEnd();
+                }
 
-                    // login
-                    FormUrlEncodedContent loginContent = new FormUrlEncodedContent(new[] {
+                using (HttpClientHandler handler = new HttpClientHandler() { CookieContainer = new CookieContainer() })
+                {
+                    using (HttpClient client = new HttpClient(handler))
+                    {
+                        // set base uri and request headers
+                        client.BaseAddress = new Uri(baseUri);
+                        client.DefaultRequestHeaders.Accept.Clear();
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/xml"));
+
+                        // login
+                        FormUrlEncodedContent loginContent = new FormUrlEncodedContent(new[] {
                         new KeyValuePair<string, string>("login", username),
                         new KeyValuePair<string, string>("password", password)});
-                    HttpResponseMessage loginResponse = await client.PostAsync("/rest/user/login", loginContent);
+                        HttpResponseMessage loginResponse = await client.PostAsync("/rest/user/login", loginContent);
 
-                    // if login fails then exit
-                    if (!loginResponse.IsSuccessStatusCode)
-                    {
-                        logger.ErrorFormat("YouTrack server returned an error during authentication: {0:d} {1}", loginResponse.StatusCode, loginResponse.ReasonPhrase);
-                        Console.Write("YouTrack server returned an error during authentication: {0:d} {1}\r\n\r\n", loginResponse.StatusCode, loginResponse.ReasonPhrase);
-                        return loginResponse;
-                    }
+                        // if login fails then exit
+                        if (!loginResponse.IsSuccessStatusCode)
+                        {
+                            logger.ErrorFormat("YouTrack server returned an error during authentication: {0:d} {1}", loginResponse.StatusCode, loginResponse.ReasonPhrase);
+                            Console.Write("YouTrack server returned an error during authentication: {0:d} {1}\r\n\r\n", loginResponse.StatusCode, loginResponse.ReasonPhrase);
+                            return loginResponse;
+                        }
 
-                    // set authentication cookies
-                    foreach (string cookieHeader in loginResponse.Headers.Where(h => h.Key == "Set-Cookie").SelectMany(c => c.Value))
-                    {
-                        handler.CookieContainer.SetCookies(new Uri(baseUri), cookieHeader);
-                    }
+                        // set authentication cookies
+                        foreach (string cookieHeader in loginResponse.Headers.Where(h => h.Key == "Set-Cookie").SelectMany(c => c.Value))
+                        {
+                            handler.CookieContainer.SetCookies(new Uri(baseUri), cookieHeader);
+                        }
 
-                    // put the import
-                    requestResponse = await client.PutAsync(requestUri, new StringContent(content, Encoding.UTF8, "application/xml"));
+                        // put the import
+                        requestResponse = await client.PutAsync(requestUri, new StringContent(content, Encoding.UTF8, "application/xml"));
 
-                    if (requestResponse.StatusCode == HttpStatusCode.InternalServerError)
-                    {
-                        logger.ErrorFormat("YouTrack server returned an error during import:  {0:d} {1}", requestResponse.StatusCode, requestResponse.ReasonPhrase);
-                    }
-                    else
-                    {
-                        // Deserialize the response to a Report instance
-                        Report report = Report.DeSerialize(await requestResponse.Content.ReadAsStreamAsync());
+                        if (requestResponse.StatusCode == HttpStatusCode.InternalServerError || requestResponse.StatusCode == HttpStatusCode.BadRequest)
+                        {
+                            logger.ErrorFormat("YouTrack server returned an error during import:  {0:d} {1}", requestResponse.StatusCode, requestResponse.ReasonPhrase);
+                        }
+                        else
+                        {
+                            // Deserialize the response to a Report instance
+                            Report report = Report.DeSerialize(await requestResponse.Content.ReadAsStreamAsync());
 
-                        // write outcome to log
-                        report.WriteToLog();
+                            // write outcome to log
+                            report.WriteToLog();
+                        }
                     }
                 }
+
+                if (requestResponse.IsSuccessStatusCode)
+                    Console.Write("'{0}' was imported successfully\r\n\r\n", Path.GetFileName(inputUri));
+                else
+                    Console.Write("YouTrack server returned an error: {0:d} {1}\r\n\r\n", requestResponse.StatusCode, requestResponse.ReasonPhrase);
+
+                return requestResponse;
             }
-
-            if (requestResponse.IsSuccessStatusCode)
-                Console.Write("'{0}' was imported successfully\r\n\r\n", Path.GetFileName(inputUri));
-            else
-                Console.Write("YouTrack server returned an error: {0:d} {1}\r\n\r\n", requestResponse.StatusCode, requestResponse.ReasonPhrase);
-
-            return requestResponse;
+            catch (Exception ex)
+            {
+                logger.Error("Import caused an exception.", ex);
+            }
+            return null;
         }
 
         /// <summary>
