@@ -9,6 +9,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml.Xsl;
+using YouTrackImporter.Data.Models;
 
 namespace YouTrackImporter
 {
@@ -94,7 +95,7 @@ namespace YouTrackImporter
                     // put the import
                     requestResponse = await client.PutAsync(requestUri, new StringContent(content, Encoding.UTF8, "application/xml"));
 
-                    string responseContent = await requestResponse.Content.ReadAsStringAsync();
+                    Report report = Report.Serialize(await requestResponse.Content.ReadAsStreamAsync());
                 }
             }
 

@@ -57,6 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Models\Report.cs" />
+    <Compile Include="Data\Models\ReportItem.cs" />
+    <Compile Include="Data\Models\ReportItemError.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,6 +67,9 @@
     <None Include="App.config" />
     <None Include="CodeMaps\Main.dgml" />
     <None Include="Data\Schema\backlog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\Schema\youtrack-import-report.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Data\Schema\youtrack-issue.xsd">

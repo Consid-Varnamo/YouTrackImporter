@@ -66,6 +66,18 @@
             </value>
           </field>-->
           <!--Assigned should be here-->
+          <field Name="Assignee">
+            <value>
+              <xsl:choose>
+                <xsl:when test="assigned = 'Christer Heinbäck'">
+                  <xsl:text>ChristerH</xsl:text>
+                </xsl:when>
+                <xsl:when test="assigned = 'Daniel Heinmert'">
+                  <xsl:text>daniel</xsl:text>
+                </xsl:when>
+              </xsl:choose>
+            </value>
+          </field>
           <field name="Roll">
             <value>
               <xsl:value-of select="roles"/>
