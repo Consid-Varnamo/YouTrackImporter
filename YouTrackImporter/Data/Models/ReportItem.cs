@@ -9,6 +9,8 @@ namespace YouTrackImporter.Data.Models
         public string Id { get; set; }
         [XmlAttribute("imported")]
         public bool Imported { get; set; }
+        [XmlText]
+        public string Message { get; set; }
         [XmlElement("error")]
         public List<ReportItemError> Errors { get; set; }
     }

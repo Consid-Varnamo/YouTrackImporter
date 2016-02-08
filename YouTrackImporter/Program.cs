@@ -95,7 +95,11 @@ namespace YouTrackImporter
                     // put the import
                     requestResponse = await client.PutAsync(requestUri, new StringContent(content, Encoding.UTF8, "application/xml"));
 
-                    Report report = Report.Serialize(await requestResponse.Content.ReadAsStreamAsync());
+                    // Deserialize the response to a Report instance
+                    Report report = Report.DeSerialize(await requestResponse.Content.ReadAsStreamAsync());
+
+                    // write outcome to log
+                    report.WriteToLog();
                 }
             }
 
