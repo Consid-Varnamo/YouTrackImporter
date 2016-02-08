@@ -33,7 +33,7 @@ namespace YouTrackImporter.Data.Models
                     logger.WarnFormat("Could not import issue {0} {1}", item.Id, item.Message);
                     foreach(ReportItemError error in item.Errors)
                     {
-                        logger.WarnFormat("\tField {0} with value {1} caused the error {2}", error.FieldName, error.Value, error.Message);
+                        logger.WarnFormat("\tField '{0}' with value '{1}' caused the error '{2}'", error.FieldName, error.Value, error.Message);
                     }
                 }
             }
