@@ -110,7 +110,7 @@ namespace YouTrackImporter
                             try
                             {
                                 // Deserialize the response to a Report instance
-                                Report report = Report.DeSerialize(await requestResponse.Content.ReadAsStreamAsync());
+                                Report report = Report.Deserialize(await requestResponse.Content.ReadAsStreamAsync());
 
                                 // write outcome to log
                                 report.WriteToLog();

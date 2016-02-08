@@ -13,7 +13,7 @@ namespace YouTrackImporter.Data.Models
         [XmlElement("item")]
         public List<ReportItem> Items { get; set; }
 
-        public static Report DeSerialize(Stream responseContentStream)
+        public static Report Deserialize(Stream responseContentStream)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(Report));
 
