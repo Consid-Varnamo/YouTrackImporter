@@ -27,7 +27,7 @@
             </value>
           </field>
           <field name="created">
-            <value>1454688000</value>
+            <value>1454932784000</value>
           </field>
           <!--Must be a valid YouTrack username-->
           <field name="reporterName">
@@ -38,9 +38,17 @@
               <xsl:value-of select="area"/>
             </value>
           </field>
+          <!--Should not be empty-->
           <field name="priority">
             <value>
-              <xsl:value-of select="priority"/>
+              <xsl:choose>
+                <xsl:when test="priority = ''">
+                  <xsl:text>4 - Medium</xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:value-of select="priority"/>
+                </xsl:otherwise>
+              </xsl:choose>
             </value>
           </field>
           <!-- *** Skipped
@@ -65,19 +73,6 @@
               <xsl:value-of select="worked-hrs"/>
             </value>
           </field>-->
-          <xsl:if test="roles != ''">
-            <field name="Roll">
-              <value>
-                <xsl:value-of select="roles"/>
-              </value>
-            </field>
-          </xsl:if>
-          <xsl:if test="string-length(internal-comment) &gt; 0">
-            <comment author="ChristerH" text="{internal-comment}" created="1454688000"/>
-          </xsl:if>
-          <xsl:if test="string-length(external-comment) &gt; 0">
-            <comment author="maria.borman" text="{external-comment}" created="1454688000"/>
-          </xsl:if>
           <field name="Assignee">
             <value>
               <xsl:choose>
@@ -90,6 +85,19 @@
               </xsl:choose>
             </value>
           </field>
+          <xsl:if test="roles != ''">
+            <field name="Roll">
+              <value>
+                <xsl:value-of select="roles"/>
+              </value>
+            </field>
+          </xsl:if>
+          <xsl:if test="string-length(internal-comment) &gt; 0">
+            <comment author="ChristerH" text="{internal-comment}" created="1454932784000"/>
+          </xsl:if>
+          <xsl:if test="string-length(external-comment) &gt; 0">
+            <comment author="maria.borman" text="{external-comment}" created="1454932784000"/>
+          </xsl:if>
         </issue>
       </xsl:for-each>
     </issues>

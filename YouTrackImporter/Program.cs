@@ -101,17 +101,25 @@ namespace YouTrackImporter
                         // put the import
                         requestResponse = await client.PutAsync(requestUri, new StringContent(content, Encoding.UTF8, "application/xml"));
 
-                        if (requestResponse.StatusCode == HttpStatusCode.InternalServerError || requestResponse.StatusCode == HttpStatusCode.BadRequest)
+                        if (requestResponse.StatusCode == HttpStatusCode.InternalServerError)
                         {
-                            logger.ErrorFormat("YouTrack server returned an error during import: {0:d} {1}", requestResponse.StatusCode, requestResponse.ReasonPhrase);
+                            logger.ErrorFormat("YouTrack server returned an error during import:  {0:d} {1}", requestResponse.StatusCode, requestResponse.ReasonPhrase);
                         }
                         else
                         {
-                            // Deserialize the response to a Report instance
-                            Report report = Report.DeSerialize(await requestResponse.Content.ReadAsStreamAsync());
+                            try
+                            {
+                                // Deserialize the response to a Report instance
+                                Report report = Report.Deserialize(await requestResponse.Content.ReadAsStreamAsync());
 
-                            // write outcome to log
-                            report.WriteToLog();
+                                // write outcome to log
+                                report.WriteToLog();
+                            }
+                            catch
+                            {
+                                string responseString = await requestResponse.Content.ReadAsStringAsync();
+                                logger.ErrorFormat("Could not serialize response: {0}", responseString);
+                            }
                         }
                     }
                 }
@@ -123,9 +131,9 @@ namespace YouTrackImporter
 
                 return requestResponse;
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                logger.Error("Import caused an exception", e);
+                logger.Error("Import caused an exception.", ex);
             }
             return null;
         }
