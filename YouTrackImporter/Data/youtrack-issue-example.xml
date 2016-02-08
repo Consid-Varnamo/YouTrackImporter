@@ -13,7 +13,7 @@
 är kopplat till distributören i CM. </value>
     </field>
     <field name="created">
-      <value>1454688000</value>
+      <value>1454932784000</value>
     </field>
     <field name="reporterName">
       <value>maria.borman</value>
@@ -36,7 +36,7 @@
     <field name="Assignee">
       <value>ChristerH</value>
     </field>
-    <comment author="ChristerH" text="Se titel 9789163887949. FSGR-posten på boken har kommit in via grossistfil och ska inte kunna sättas som huvuddistributör för boken" created="1454688000" />
-    <comment author="maria.borman" text="Här kommer Marias kommentarer" created="1454688000" />
+    <comment author="ChristerH" text="Se titel 9789163887949. FSGR-posten på boken har kommit in via grossistfil och ska inte kunna sättas som huvuddistributör för boken" created="1454932784000" />
+    <comment author="maria.borman" text="Här kommer Marias kommentarer" created="1454932784000" />
   </issue>
 </issues>

@@ -27,7 +27,7 @@
             </value>
           </field>
           <field name="created">
-            <value>1454688000</value>
+            <value>1454932784000</value>
           </field>
           <!--Must be a valid YouTrack username-->
           <field name="reporterName">
@@ -86,10 +86,10 @@
             </field>
           </xsl:if>
           <xsl:if test="string-length(internal-comment) &gt; 0">
-            <comment author="ChristerH" text="{internal-comment}" created="1454688000"/>
+            <comment author="ChristerH" text="{internal-comment}" created="1454932784000"/>
           </xsl:if>
           <xsl:if test="string-length(external-comment) &gt; 0">
-            <comment author="maria.borman" text="{external-comment}" created="1454688000"/>
+            <comment author="maria.borman" text="{external-comment}" created="1454932784000"/>
           </xsl:if>
         </issue>
       </xsl:for-each>
