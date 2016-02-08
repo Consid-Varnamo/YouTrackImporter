@@ -15,11 +15,11 @@
     <field name="created">
       <value>1454688000</value>
     </field>
-    <field name="reporter">
-      <value>Maria_Börman</value>
+    <field name="reporterName">
+      <value>maria.borman</value>
     </field>
     <field name="subsystem">
-      <value>Redigera artikel</value>
+      <value>Redigera artikel</value> 
     </field>
     <field name="priority">
       <value>3 - Hög</value>
@@ -34,6 +34,6 @@
       <value>Personal</value>
     </field>
     <comment author="ChristerH" text="Se titel 9789163887949. FSGR-posten på boken har kommit in via grossistfil och ska inte kunna sättas som huvuddistributör för boken" created="1454688000" />
-    <comment author="Maria_Börman" text="Här kommer Marias kommentarer" created="1454688000" />
+    <comment author="maria.borman" text="Här kommer Marias kommentarer" created="1454688000" />
   </issue>
 </issues>

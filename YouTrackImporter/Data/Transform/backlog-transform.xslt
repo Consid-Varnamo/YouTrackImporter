@@ -29,8 +29,9 @@
           <field name="created">
             <value>1454688000</value>
           </field>
-          <field name="reporter">
-            <value>Maria_Börman</value>
+          <!--Must be a valid YouTrack username-->
+          <field name="reporterName">
+            <value>maria.borman</value>
           </field>
           <field name="subsystem">
             <value>
