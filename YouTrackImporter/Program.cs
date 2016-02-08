@@ -93,6 +93,10 @@ namespace YouTrackImporter
 
                     // put the import
                     requestResponse = await client.PutAsync(requestUri, new StringContent(content, Encoding.UTF8, "application/xml"));
+
+
+
+                    string responseContent = await requestResponse.Content.ReadAsStringAsync();
                 }
             }
 

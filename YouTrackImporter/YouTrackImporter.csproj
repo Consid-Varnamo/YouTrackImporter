@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Data\backlog.xml" />
     <Content Include="Data\Transform\backlog-transform.xslt" />
+    <Content Include="Data\youtrack-issue-test.xml" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

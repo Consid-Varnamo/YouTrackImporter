@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<issues>
+  <issue>
+    <field name="numberInProject">
+      <value>999</value>
+    </field>
+    <field name="summary">
+      <value>Ett förlag ska bara kunna byta huvuddistributör på en titel i webbgränssnittet om förlaget
+är kopplat till distributören i CM. </value>
+    </field>
+    <field name="description">
+      <value>Ett förlag ska bara kunna byta huvuddistributör på en titel i webbgränssnittet om förlaget
+är kopplat till distributören i CM. </value>
+    </field>
+    <field name="created">
+      <value>1454688000</value>
+    </field>
+    <field name="reporter">
+      <value>Maria_Börman</value>
+    </field>
+    <field name="subsystem">
+      <value>Redigera artikel</value>
+    </field>
+    <field name="priority">
+      <value>3 - Hög</value>
+    </field>
+    <field name="assembly file version">
+      <value>1.0.0.0</value>
+    </field>
+    <field name="estimation hrs">
+      <value>3</value>
+    </field>
+    <field name="Roll">
+      <value>Personal</value>
+    </field>
+    <comment author="ChristerH" text="Se titel 9789163887949. FSGR-posten på boken har kommit in via grossistfil och ska inte kunna sättas som huvuddistributör för boken" created="1454688000" />
+    <comment author="Maria_Börman" text="Här kommer Marias kommentarer" created="1454688000" />
+  </issue>
+</issues>
