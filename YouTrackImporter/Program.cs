@@ -1,4 +1,5 @@
-﻿using System;
+﻿using log4net;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -16,6 +17,7 @@ namespace YouTrackImporter
     class Program
     {
         static Dictionary<ArgumentEnum, string> args;
+        static ILog logger = LogManager.GetLogger("Program");
 
         /// <summary>
         /// Contains the valid console command switches
@@ -95,11 +97,18 @@ namespace YouTrackImporter
                     // put the import
                     requestResponse = await client.PutAsync(requestUri, new StringContent(content, Encoding.UTF8, "application/xml"));
 
-                    // Deserialize the response to a Report instance
-                    Report report = Report.DeSerialize(await requestResponse.Content.ReadAsStreamAsync());
+                    if (requestResponse.StatusCode == HttpStatusCode.InternalServerError)
+                    {
+                        logger.ErrorFormat("The request caused an {0} {1} exception", (int)requestResponse.StatusCode, requestResponse.ReasonPhrase);
+                    }
+                    else
+                    {
+                        // Deserialize the response to a Report instance
+                        Report report = Report.DeSerialize(await requestResponse.Content.ReadAsStreamAsync());
 
-                    // write outcome to log
-                    report.WriteToLog();
+                        // write outcome to log
+                        report.WriteToLog();
+                    }
                 }
             }
 

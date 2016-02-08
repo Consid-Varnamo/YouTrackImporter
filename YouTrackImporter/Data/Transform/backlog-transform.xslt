@@ -66,7 +66,7 @@
             </value>
           </field>-->
           <!--Assigned should be here-->
-          <field Name="Assignee">
+          <field name="Assignee">
             <value>
               <xsl:choose>
                 <xsl:when test="assigned = 'Christer Heinbäck'">
@@ -78,16 +78,18 @@
               </xsl:choose>
             </value>
           </field>
-          <field name="Roll">
-            <value>
-              <xsl:value-of select="roles"/>
-            </value>
-          </field>
+          <xsl:if test="roles != ''">
+            <field name="Roll">
+              <value>
+                <xsl:value-of select="roles"/>
+              </value>
+            </field>
+          </xsl:if>
           <xsl:if test="string-length(internal-comment) &gt; 0">
             <comment author="ChristerH" text="{internal-comment}" created="1454688000"/>
           </xsl:if>
           <xsl:if test="string-length(external-comment) &gt; 0">
-            <comment author="Maria_Börman" text="{external-comment}" created="1454688000"/>
+            <comment author="maria.borman" text="{external-comment}" created="1454688000"/>
           </xsl:if>
         </issue>
       </xsl:for-each>
