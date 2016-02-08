@@ -38,9 +38,17 @@
               <xsl:value-of select="area"/>
             </value>
           </field>
+          <!--Should not be empty-->
           <field name="priority">
             <value>
-              <xsl:value-of select="priority"/>
+              <xsl:choose>
+                <xsl:when test="priority = ''">
+                  <xsl:text>4 - Medium</xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:value-of select="priority"/>
+                </xsl:otherwise>
+              </xsl:choose>
             </value>
           </field>
           <!-- *** Skipped
@@ -65,7 +73,6 @@
               <xsl:value-of select="worked-hrs"/>
             </value>
           </field>-->
-          <!--Assigned should be here-->
           <field name="Assignee">
             <value>
               <xsl:choose>
