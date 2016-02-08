@@ -65,19 +65,6 @@
               <xsl:value-of select="worked-hrs"/>
             </value>
           </field>-->
-          <!--Assigned should be here-->
-          <field name="Assignee">
-            <value>
-              <xsl:choose>
-                <xsl:when test="assigned = 'Christer Heinbäck'">
-                  <xsl:text>ChristerH</xsl:text>
-                </xsl:when>
-                <xsl:when test="assigned = 'Daniel Heinmert'">
-                  <xsl:text>daniel</xsl:text>
-                </xsl:when>
-              </xsl:choose>
-            </value>
-          </field>
           <xsl:if test="roles != ''">
             <field name="Roll">
               <value>
@@ -91,6 +78,18 @@
           <xsl:if test="string-length(external-comment) &gt; 0">
             <comment author="maria.borman" text="{external-comment}" created="1454688000"/>
           </xsl:if>
+          <field name="Assignee">
+            <value>
+              <xsl:choose>
+                <xsl:when test="assigned = 'Christer Heinbäck'">
+                  <xsl:text>ChristerH</xsl:text>
+                </xsl:when>
+                <xsl:when test="assigned = 'Daniel Heinmert'">
+                  <xsl:text>daniel</xsl:text>
+                </xsl:when>
+              </xsl:choose>
+            </value>
+          </field>
         </issue>
       </xsl:for-each>
     </issues>
