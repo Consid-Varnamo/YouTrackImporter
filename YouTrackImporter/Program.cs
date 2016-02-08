@@ -22,7 +22,7 @@ namespace YouTrackImporter
         /// <summary>
         /// Contains the valid console command switches
         /// </summary>
-        enum ArgumentEnum { Transform, Import, Stylesheet, InputUri, ResultFile, Project, YouTrackUri }
+        enum ArgumentEnum { Transform, Import, Stylesheet, InputUri, ResultFile, Project, YouTrackUri, Username, Password }
 
         /// <summary>
         /// Executes Xslt transformation to YouTrack Xml or import issues to YouTrack
@@ -40,7 +40,8 @@ namespace YouTrackImporter
             }
             if (Program.args.Keys.Any(k => k == ArgumentEnum.Import))
             {
-                Task task = RunImportIssues(Program.args[ArgumentEnum.InputUri], Program.args[ArgumentEnum.YouTrackUri], Program.args[ArgumentEnum.Project]);
+                Task task = RunImportIssues(Program.args[ArgumentEnum.InputUri], Program.args[ArgumentEnum.YouTrackUri], Program.args[ArgumentEnum.Project], 
+                    Program.args[ArgumentEnum.Username], Program.args[ArgumentEnum.Password]);
 
                 task.Wait();
             }
@@ -53,7 +54,7 @@ namespace YouTrackImporter
         /// <param name="baseUri">Base url to the YouTrack server</param>
         /// <param name="project">The name of the project issues will be imported to</param>
         /// <returns>The last executed HttpResponseMessage</returns>
-        static async Task<HttpResponseMessage> RunImportIssues(string inputUri, string baseUri, string project)
+        static async Task<HttpResponseMessage> RunImportIssues(string inputUri, string baseUri, string project, string username, string password)
         {
             string requestUri = string.Format("rest/import/{0}/issues", project);
             HttpResponseMessage requestResponse = null;
@@ -77,14 +78,15 @@ namespace YouTrackImporter
 
                     // login
                     FormUrlEncodedContent loginContent = new FormUrlEncodedContent(new[] {
-                        new KeyValuePair<string, string>("login", "ChristerH"),
-                        new KeyValuePair<string, string>("password", "olle123")});
+                        new KeyValuePair<string, string>("login", username),
+                        new KeyValuePair<string, string>("password", password)});
                     HttpResponseMessage loginResponse = await client.PostAsync("/rest/user/login", loginContent);
 
                     // if login fails then exit
                     if (!loginResponse.IsSuccessStatusCode)
                     {
-                        Console.Write("YouTrack server returned an error: {0:d} {1}\r\n\r\n", loginResponse.StatusCode, loginResponse.ReasonPhrase);
+                        logger.ErrorFormat("YouTrack server returned an error during authentication: {0:d} {1}", loginResponse.StatusCode, loginResponse.ReasonPhrase);
+                        Console.Write("YouTrack server returned an error during authentication: {0:d} {1}\r\n\r\n", loginResponse.StatusCode, loginResponse.ReasonPhrase);
                         return loginResponse;
                     }
 
@@ -99,7 +101,7 @@ namespace YouTrackImporter
 
                     if (requestResponse.StatusCode == HttpStatusCode.InternalServerError)
                     {
-                        logger.ErrorFormat("The request caused an {0} {1} exception", (int)requestResponse.StatusCode, requestResponse.ReasonPhrase);
+                        logger.ErrorFormat("YouTrack server returned an error during import:  {0:d} {1}", requestResponse.StatusCode, requestResponse.ReasonPhrase);
                     }
                     else
                     {
