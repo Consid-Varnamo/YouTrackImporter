@@ -67,24 +67,33 @@
     <None Include="App.config" />
     <None Include="CodeMaps\Import.dgml" />
     <None Include="CodeMaps\Transform.dgml" />
-    <None Include="Data\Schema\backlog.xsd">
+    <Content Include="Data\Schema\backlog.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Data\Schema\youtrack-import-report.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Schema\youtrack-import-report.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Data\Schema\youtrack-issue.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Schema\youtrack-issue.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <Content Include="Data\backlog-example.xml" />
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\backlog-example.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="log4net.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\Transform\backlog-transform.xslt" />
-    <Content Include="Data\youtrack-issue-example.xml" />
+    <Content Include="Data\Transform\backlog-transform.xslt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\youtrack-issue-example.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
