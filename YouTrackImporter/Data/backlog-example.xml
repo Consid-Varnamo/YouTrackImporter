@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<backlog>
+	<issue>
+		<id>1</id>
+		<area>Generell</area>
+		<priority>5 - Låg</priority>
+		<sprint/>
+		<status>Öppen</status>
+		<release/>
+		<estimation-hrs>2</estimation-hrs>
+		<worked-hrs/>
+		<assigned>Christer Heinbäck</assigned>
+		<roles>Personal</roles>
+		<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu lectus nunc. In hac habitasse platea dictumst. Maecenas diam tortor, luctus in lacus pellentesque, fermentum condimentum erat. </description>
+		<internal-comment/>
+		<external-comment/>
+	</issue>
+  <issue>
+    <id>2</id>
+    <area>Generell</area>
+    <priority>4 - Medel</priority>
+    <sprint/>
+    <status>Öppen</status>
+    <release/>
+    <estimation-hrs>2</estimation-hrs>
+    <worked-hrs/>
+    <assigned>Christer Heinbäck</assigned>
+    <roles>Personal</roles>
+    <description>Vestibulum vehicula lorem id augue posuere scelerisque. Sed id semper erat, in mollis lacus. Integer sagittis turpis interdum, aliquam nulla in, fringilla dui. In hac habitasse platea dictumst</description>
+    <internal-comment>Det här är en intern kommentar</internal-comment>
+    <external-comment>Här skriver kunden sin kommentar</external-comment>
+  </issue>
+</backlog>
